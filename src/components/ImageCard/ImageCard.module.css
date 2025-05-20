@@ -1,0 +1,17 @@
+.imageThumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+  height: 145px;
+
+  border: 4px solid #fff;
+  border-radius: 10px;
+  overflow: hidden;
+
+  transition: transform 350ms ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
