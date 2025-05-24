@@ -1,6 +1,10 @@
 import { ScaleLoader } from 'react-spinners';
 
-const Loader = ({ loading }) => {
+type LoaderProps = {
+  loading: boolean;
+};
+
+const Loader = ({ loading }: LoaderProps) => {
   return (
     <ScaleLoader
       color='#dda0dd'

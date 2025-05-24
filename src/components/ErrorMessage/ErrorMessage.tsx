@@ -1,10 +1,13 @@
 import css from './ErrorMessage.module.css';
 
-const ErrorMessage = () => {
+type ErrorMessageProps = {
+  message: string;
+};
+
+const ErrorMessage = ({ message }: ErrorMessageProps) => {
   return (
     <div className={css.error}>
-      Whoops, something went wrong! <br />
-      Please try again your request!
+      <p>❌ {message}</p>
     </div>
   );
 };
